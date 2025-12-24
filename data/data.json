@@ -1,0 +1,132 @@
+{
+    "events": [
+        {
+            "name": "Clase de mate",
+            "start_time": "2025-12-23T17:06:00",
+            "end_time": "2025-12-23T17:36:00",
+            "resources": [
+                "aula_1"
+            ]
+        },
+        {
+            "name": "Clase de Mate",
+            "start_time": "2025-12-23T16:40:00",
+            "end_time": "2025-12-23T17:05:00",
+            "resources": [
+                "aula_1"
+            ]
+        },
+        {
+            "name": "Pr\u00e1ctica de Basketball",
+            "start_time": "2025-12-23T14:00:00",
+            "end_time": "2025-12-23T16:00:00",
+            "resources": [
+                "gym_1"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "id": "hall_1",
+            "name": "Aula de Conferencias 1",
+            "attributes": {
+                "type": "room",
+                "capacity": 60
+            }
+        },
+        {
+            "id": "hall_2",
+            "name": "Aula de Conferencias 2",
+            "attributes": {
+                "type": "room",
+                "capacity": 40
+            }
+        },
+        {
+            "id": "hall_3",
+            "name": "Aula de Conferencias 3",
+            "attributes": {
+                "type": "room",
+                "capacity": 60
+            }
+        },
+        {
+            "id": "hall_4",
+            "name": "Aula de Conferencias 4",
+            "attributes": {
+                "type": "room",
+                "capacity": 100
+            }
+        },
+        {
+            "id": "hall_5",
+            "name": "Aula de Conferencias 5",
+            "attributes": {
+                "type": "room",
+                "capacity": 80
+            }
+        },
+        {
+            "id": "hall_6",
+            "name": "Aula de Conferencias 6",
+            "attributes": {
+                "type": "room",
+                "capacity": 150
+            }
+        },
+        {
+            "id": "gym",
+            "name": "Gimnasio",
+            "attributes": {
+                "type": "room",
+                "capacity": 200
+            }
+        },
+        {
+            "id": "projector_hd",
+            "name": "Proyector HD",
+            "attributes": {
+                "type": "equipment"
+            }
+        },
+        {
+            "id": "tech_support",
+            "name": "Soporte Técnico",
+            "attributes": {
+                "type": "staff"
+            }
+        },
+        {
+            "id": "advanced_projector",
+            "name": "Proyector Avanzado",
+            "attributes": {
+                "type": "equipment"
+            }
+        },
+        {
+            "id": "old_sound_system",
+            "name": "Sistema de sonido antiguo",
+            "attributes": {
+                "type": "equipment"
+            }
+        }
+    ],
+    "constraints": [
+        {
+            "type": "co_requisite",
+            "resources": [
+                "projector_hd",
+                "tech_support"
+            ],
+            "description": "Seminarios requieren ambos, un Proyector HD y Soporte Técnico para funcionar adecuadamente."
+        },
+        {
+            "type": "mutual_exclusion",
+            "resources": [
+                "advanced_projector",
+                "old_sound_system"
+            ],
+            "description": "El Proyector Avanzado y el Sistema de Sonido Antiguo no pueden usarse juntos debido a problemas de compatibilidad."
+        }
+    ]
+}
