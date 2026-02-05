@@ -118,3 +118,5 @@ Este proyecto es para fines educativos y académicos.
 ## NOTAS
 
 Si eres estudiante y estás viendo esto, siéntete libre de tomar ideas si es que lo ves necesario pero por favor, no copies directamente, sé creativo y haz las cosas por ti mismo.
+
+## COPOYRIGHT: Brayhant Yamir Chávez Rodríguez C111
